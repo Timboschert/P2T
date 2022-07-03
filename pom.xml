@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -53,6 +51,7 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+			<version>1.18.22</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,85 +69,118 @@
 			<artifactId>jwnl</artifactId>
 			<version>1.4_rc3</version>
 		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-boot-starter</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		<!-- Workspace Dependencies -->
+		<!-- 			Workspace Dependencies 				-->
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>bpstruct</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/bpstruct.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.7</version>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
+			<artifactId>jbpt</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jbpt-0.2.397.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>PLATZHALTER</groupId>
 			<artifactId>hpi-bpt</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/hpi-bpt.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>4.0.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/javax.servlet-api-4.0.1.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>json</artifactId>
 			<version>20180130</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/json-20180130.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/junit-4.12.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>pnapi-java</artifactId>
 			<version>1.0.5</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pnapi-java-1.0.5.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>resolver</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/resolver.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>rpw</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/rpw.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>rpw-lkb</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/rpw-lkb.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>serializer</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/serializer.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>uma</artifactId>
 			<version>1.2.4</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/uma-1.2.4.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>xalan</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/xalan.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>PLATZHALTER</groupId>
 			<artifactId>xercesImpl</artifactId>
-			<version>1.0</version>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/xercesImpl.jar</systemPath>
 		</dependency>
-		<!-- <dependency> <groupId>PLATZHALTER</groupId> <artifactId>xml-apis</artifactId> 
-			<version>0</version> <scope>system</scope> <systemPath>${project.basedir}/lib/xml-apis.jar</systemPath> 
-			</dependency> -->
+		<dependency>
+			<groupId>PLATZHALTER</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/xml-apis.jar</systemPath>
+		</dependency>
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
@@ -161,6 +193,38 @@
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.diffplug.spotless</groupId>
+			<artifactId>spotless-maven-plugin</artifactId>
+			<version>2.22.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-resources</artifactId>
+			<version>1.2.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>5.13.0.202109080827-r</version>
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
@@ -191,11 +255,73 @@
 						<configuration>
 							<tasks>
 								<copy todir="${basedir}/target/src/main/resources">
-									<fileset dir="${basedir}/src/main/resources"
-										includes="**/*" />
+									<fileset dir="${basedir}/src/main/resources" includes="**/*" />
 								</copy>
 							</tasks>
 						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.diffplug.spotless</groupId>
+				<artifactId>spotless-maven-plugin</artifactId>
+				<version>2.22.8</version>
+				<configuration>
+					<!-- optional: limit format enforcement to just the files changed by this feature branch -->
+					<!-- <ratchetFrom>master</ratchetFrom> --><!-- Kommentar ausschalten falls das Formatting nur auf einem bestimmten Branch angewandt werden soll-->
+					<formats>
+						<!-- you can define as many formats as you want, each is independent -->
+						<format>
+							<!-- define the files to apply to -->
+							<includes>
+								<include>*.md</include>
+								<include>.gitignore</include>
+							</includes>
+							<!-- define the steps to apply to those files -->
+							<trimTrailingWhitespace />
+							<endWithNewline />
+							<indent>
+								<tabs>true</tabs>
+								<spacesPerTab>4</spacesPerTab>
+							</indent>
+						</format>
+					</formats>
+					<!-- define a language-specific format -->
+					<java>
+						<!-- no need to specify files, inferred automatically, but you can if you want -->
+						<!-- <includes>
+							<include>src/main/java/**/*.java</include>
+							<include>src/test/java/**/*.java</include>
+						</includes> -->
+
+						<importOrder /> <!-- standard import order -->
+
+						<removeUnusedImports /> <!-- self-explanatory -->
+						<!-- apply a specific flavor of google-java-format and reflow long strings -->
+						<googleJavaFormat>
+							<version>1.8</version> <!-- optional -->
+							<style>GOOGLE</style> <!-- or AOSP (optional) -->
+							<reflowLongStrings>true</reflowLongStrings> <!-- optional (requires at least 1.8) -->
+							<!-- optional: custom group artifact (you probably don't need this) -->
+							<groupArtifact>com.google.googlejavaformat:google-java-format</groupArtifact>
+						</googleJavaFormat>
+
+						<!-- make sure every file has the following copyright header.
+					  optionally, Spotless can set copyright years by digging
+					  through git history (see "license" section below) -->
+						<licenseHeader>
+							<content>/* (C)$YEAR */</content> <!-- or <file>${project.basedir}/license-header</file> -->
+						</licenseHeader>
+					</java>
+				</configuration>
+				<executions>
+					<execution>
+						<!-- Runs in compile phase to fail fast in case of formatting issues.-->
+						<id>spotless-check</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
