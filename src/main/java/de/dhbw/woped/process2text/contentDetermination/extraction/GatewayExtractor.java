@@ -85,7 +85,8 @@ public class GatewayExtractor {
         verb = "be";
         bo = "";
         modList.put(
-            sSplit[0], new ModifierRecord(ModifierRecord.TYPE_ADV, ModifierRecord.TARGET_VERB));
+            sSplit[0], new ModifierRecord(ModifierRecord.TYPE_ADV, 
+            ModifierRecord.TARGET_VERB));
         modList.put(
             sSplit[1], new ModifierRecord(ModifierRecord.TYPE_ADV, ModifierRecord.TARGET_VERB));
         extracted = true;
